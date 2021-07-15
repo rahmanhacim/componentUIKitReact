@@ -1,0 +1,76 @@
+import styled from 'styled-components'
+
+import {
+  space,
+  color,
+  typography,
+  layout,
+  background,
+  border,
+  position,
+  colorStyle,
+  variant,
+} from 'styled-system'
+
+export const InfoboxStyled = styled.div(
+  space,
+  color,
+  typography,
+  layout,
+  background,
+  border,
+  position,
+  colorStyle,
+  variant({
+    variants: {
+      neutral: {
+        bg: 'bg10',
+        width: '100%',
+        minHeight: '64px',
+        borderRadius: '4px',
+        border: '1px solid',
+        borderColor: 'item40',
+        position: 'absolute',
+        alignItems: 'flex-start',
+        flexDirection: 'row',
+        display: 'flex',
+      },
+      info: {
+        bg: 'info.root',
+        width: '100%',
+        minHeight: '64px',
+        borderRadius: '4px',
+        borderColor: 'info.soft',
+        position: 'absolute',
+        alignItems: 'flex-start',
+        flexDirection: 'row',
+        display: 'flex',
+        boxShadow: 'inset 0px 0px 0px 1px #B8EFFF',
+      },
+      warning: {
+        bg: 'warning.root',
+        width: '100%',
+        minHeight: '64px',
+        borderRadius: '4px',
+        borderColor: 'warning.root',
+        position: 'absolute',
+        alignItems: 'flex-start',
+        flexDirection: 'row',
+        display: 'flex',
+        boxShadow: 'inset 0px 0px 0px 1px #FFE2B8',
+      },
+      critical: {
+        bg: 'error.root',
+        width: '100%',
+        minHeight: '64px',
+        borderRadius: '4px',
+        borderColor: 'error.root',
+        position: 'absolute',
+        alignItems: 'flex-start',
+        flexDirection: 'row',
+        display: 'flex',
+        boxShadow: 'inset 0px 0px 0px 1px #F7BFC0',
+      },
+    },
+  })
+)
